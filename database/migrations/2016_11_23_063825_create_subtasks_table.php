@@ -15,9 +15,12 @@ class CreateSubtasksTable extends Migration
     {
         Schema::create('subtasks', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('status');
-            $table->string('assigned_to')->index();
+            $table->unsignedInteger('task_id')->index();
+            $table->string('name');
+            $table->string('description');
+            $table->enum('status', ['Created', 'Work in Progress','Waiting on Client', 'On Hold', 'Completed']);
             $table->unsignedSmallInteger('hours_estimate');
+            $table->string('assigned_to')->index();
             $table->timestamps();
         });
     }

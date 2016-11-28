@@ -7709,7 +7709,7 @@ button.close {
 }
 
 .p-t-5 {
-  padding-top: 36pxß;
+  padding-top: 36 pxß;
 }
 
 .p-b-0 {
@@ -7733,7 +7733,7 @@ button.close {
 }
 
 .p-b-5 {
-  padding-bottom: 36pxß;
+  padding-bottom: 36 pxß;
 }
 
 .p-l-0 {
@@ -7757,7 +7757,7 @@ button.close {
 }
 
 .p-l-5 {
-  padding-left: 36pxß;
+  padding-left: 36 pxß;
 }
 
 .p-r-0 {
@@ -7781,7 +7781,7 @@ button.close {
 }
 
 .p-r-5 {
-  padding-right: 36pxß;
+  padding-right: 36 pxß;
 }
 
 .m-t-0 {
@@ -7805,7 +7805,7 @@ button.close {
 }
 
 .m-t-5 {
-  margin-top: 36pxß;
+  margin-top: 36 pxß;
 }
 
 .m-b-0 {
@@ -7829,7 +7829,7 @@ button.close {
 }
 
 .m-b-5 {
-  margin-bottom: 36pxß;
+  margin-bottom: 36 pxß;
 }
 
 .m-l-0 {
@@ -7853,7 +7853,7 @@ button.close {
 }
 
 .m-l-5 {
-  margin-left: 36pxß;
+  margin-left: 36 pxß;
 }
 
 .m-r-0 {
@@ -7877,7 +7877,17 @@ button.close {
 }
 
 .m-r-5 {
-  margin-right: 36pxß;
+  margin-right: 36 pxß;
+}
+
+.panel-heading {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -3,7 +3,7 @@
 @section('content')
     <div class="row">
         <div class="col-xs-12 text-center">
-            <h1>Tasks</h1>
+            <h1></h1>
         </div>
     </div>
     <div class="row m-b-4">
@@ -13,8 +13,9 @@
     </div>
     <div class="row">
         <div class="col-xs-12 col-md-9">
-            <h3 class="m-t-0">Users</h3>
+            <h3 class="m-t-0">User Capacity Allocation</h3>
             <ul>
+                <li>all users</li>
                 <li>user1</li>
                 <li>user2</li>
                 <li>user3</li>
@@ -22,7 +23,7 @@
             </ul>
         </div>
         <div class="col-xs-12 col-md-3">
-            <img src="http://placehold.it/400x400" class="img-responsive">
+            <img src="http://placehold.it/300x300" class="img-responsive">
         </div>
     </div>
 @stop

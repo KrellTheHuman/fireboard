@@ -10,7 +10,7 @@ $xsPad: 3px;
 $smPad: 6px;
 $mdPad: 9px;
 $lgPad: 18px;
-$xlPad: 36pxß;
+$xlPad: 36 pxß;
 
 .p-t-0 {
     padding-top: $noPad;
@@ -202,4 +202,10 @@ $xlPad: 36pxß;
 
 .m-r-5 {
     margin-right: $xlPad;
+}
+
+.panel-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
