@@ -7688,6 +7688,12 @@ button.close {
   }
 }
 
+/* media query sizes based on bootstrap */
+/* padding and margins
+ * syntax: (p)adding|(m)argin -
+ * (t)op|(b)ottom|(l)eft|(r)ight -
+ * 0|1|2|3|4|5
+ */
 .p-t-0 {
   padding-top: 0;
 }
@@ -7709,7 +7715,7 @@ button.close {
 }
 
 .p-t-5 {
-  padding-top: 36 pxß;
+  padding-top: 36px;
 }
 
 .p-b-0 {
@@ -7733,7 +7739,7 @@ button.close {
 }
 
 .p-b-5 {
-  padding-bottom: 36 pxß;
+  padding-bottom: 36px;
 }
 
 .p-l-0 {
@@ -7757,7 +7763,7 @@ button.close {
 }
 
 .p-l-5 {
-  padding-left: 36 pxß;
+  padding-left: 36px;
 }
 
 .p-r-0 {
@@ -7781,7 +7787,7 @@ button.close {
 }
 
 .p-r-5 {
-  padding-right: 36 pxß;
+  padding-right: 36px;
 }
 
 .m-t-0 {
@@ -7805,7 +7811,7 @@ button.close {
 }
 
 .m-t-5 {
-  margin-top: 36 pxß;
+  margin-top: 36px;
 }
 
 .m-b-0 {
@@ -7829,7 +7835,7 @@ button.close {
 }
 
 .m-b-5 {
-  margin-bottom: 36 pxß;
+  margin-bottom: 36px;
 }
 
 .m-l-0 {
@@ -7853,7 +7859,7 @@ button.close {
 }
 
 .m-l-5 {
-  margin-left: 36 pxß;
+  margin-left: 36px;
 }
 
 .m-r-0 {
@@ -7877,7 +7883,7 @@ button.close {
 }
 
 .m-r-5 {
-  margin-right: 36 pxß;
+  margin-right: 36px;
 }
 
 .panel-heading {
@@ -7888,6 +7894,15 @@ button.close {
   flex-direction: row;
   -webkit-box-pack: justify;
   justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .panel-heading {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

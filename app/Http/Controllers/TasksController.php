@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Task;
+use App\User;
 use Illuminate\Http\Request;
 
 class TasksController extends Controller {
@@ -13,7 +14,8 @@ class TasksController extends Controller {
      */
     public function index() {
         $tasks = Task::all();
-        return view('tasks', compact('tasks'));
+        $users = User::all();
+        return view('tasks', compact('tasks', 'users'));
     }
 
     /**

@@ -5,12 +5,26 @@
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+/* media query sizes based on bootstrap */
+$mediaXsMin: 480px;
+$mediaXsMax: 767px;
+$mediaSmMin: 768px;
+$mediaSmMax: 991px;
+$mediaMdMin: 992px;
+$mediaMdMax: 1199px;
+$mediaLgMin: 1200px;
+
+/* padding and margins
+ * syntax: (p)adding|(m)argin -
+ * (t)op|(b)ottom|(l)eft|(r)ight -
+ * 0|1|2|3|4|5
+ */
 $noPad: 0;
 $xsPad: 3px;
 $smPad: 6px;
 $mdPad: 9px;
 $lgPad: 18px;
-$xlPad: 36 pxß;
+$xlPad: 36px;
 
 .p-t-0 {
     padding-top: $noPad;
@@ -208,4 +222,11 @@ $xlPad: 36 pxß;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+@media (max-width: $mediaSmMax) {
+    .panel-heading {
+        flex-direction: column;
+        width: 100%;
+    }
 }

@@ -17,7 +17,7 @@ class CreateTasksTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('description');
-            $table->dateTimeTz('due_date');
+            $table->dateTime('due_date');
             $table->string('contact_name');
             $table->string('contact_email');
             $table->string('contact_phone');
