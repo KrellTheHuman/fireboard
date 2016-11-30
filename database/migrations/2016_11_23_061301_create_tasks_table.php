@@ -23,7 +23,7 @@ class CreateTasksTable extends Migration
             $table->string('contact_phone');
             $table->string('dev_url');
             $table->string('live_url');
-            $table->unsignedTinyInteger('priority');
+//            $table->unsignedTinyInteger('priority');
             $table->timestamps();
         });
     }

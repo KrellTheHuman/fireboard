@@ -34,7 +34,7 @@ $factory->define(App\Task::class, function (Faker\Generator $faker) {
         'contact_phone' => $faker->phoneNumber,
         'dev_url' => $faker->url,
         'live_url' => $faker->url,
-        'priority' => $faker->numberBetween(1, 99),
+//        'priority' => $faker->numberBetween(1, 99),
     ];
 });
 
