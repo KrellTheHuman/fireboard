@@ -20,4 +20,12 @@ class Task extends Model
     public function subtasks() {
         return $this->hasMany(Subtask::class);
     }
+
+    public function subtask_count() {
+        return $this->subtasks()->where('task_id', '=', $this->attributes['id'])->count();
+    }
+
+    public function subtask_count_completed() {
+        return $this->subtasks()->where('task_id', '=', $this->attributes['id'])->where('status', '=', 'completed')->count();
+    }
 }

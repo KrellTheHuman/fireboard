@@ -15,7 +15,6 @@ require('laravel-elixir-vue-2');
 
 elixir((mix) => {
     mix.sass('app.scss')
-        .styles(['jquery-ui.css', 'jquery-ui.structure.css', 'jquery-ui.theme.css'])
         .webpack('app.js');
     mix.phpUnit();
 });

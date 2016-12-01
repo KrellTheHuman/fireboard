@@ -6,7 +6,8 @@
  */
 
 require('./bootstrap');
-require('./jquery-ui');
+/** https://github.com/nazar-pc/PickMeUp */
+require('./jquery.pickmeup.twitter-bootstrap');
 require('./tasks');
 
 /**
