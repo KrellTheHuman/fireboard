@@ -16,18 +16,50 @@ $mediaMdMin: 992px;
 $mediaMdMax: 1199px;
 $mediaLgMin: 1200px;
 
+a:link,
+a:visited,
+a:active {
+    text-decoration: none !important;
+}
 
+a:hover {
+    text-decoration: underline;
+}
 
-.panel-heading {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.panel {
+    .panel-heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        cursor: pointer;
+
+        .badge {
+            margin: 0 9px 0 -3px;
+        }
+    }
+    .panel-footer {
+        p.toggle {
+            margin-top: -18px;
+        }
+    }
+}
+
+.text-center-mobile {
+    text-align: center;
+}
+
+.text-right-mobile {
+    text-align: right;
 }
 
 @media (max-width: $mediaSmMax) {
     .panel-heading {
         flex-direction: column;
         width: 100%;
+    }
+    .text-center-mobile,
+    .text-right-mobile {
+        text-align: left;
     }
 }
 

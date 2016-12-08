@@ -17,6 +17,10 @@ class Task extends Model
         'live_url',
     ];
 
+    public function short_date() {
+        return substr($this->attributes['due_date'], 5, 5);
+    }
+
     public function subtasks() {
         return $this->hasMany(Subtask::class);
     }
