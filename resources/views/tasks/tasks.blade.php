@@ -4,6 +4,13 @@
     <div class="row">
         <div class="col-md-9">
             <h3>Tasks</h3>
+            <div id="headers-accordion" class="list-group-item">
+                <span>
+                    <span id="header-due-date">DUE</span>
+                    <span id="header-task-name">TASK NAME</span>
+                </span>
+                <span id="header-complete" class="text-right">COMPLETE</span>
+            </div>
             <div class="panel-group" id="accordion">
                 @foreach($tasks as $task)
                     @include('tasks._task')

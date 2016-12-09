@@ -25,11 +25,19 @@ class Task extends Model
         return $this->hasMany(Subtask::class);
     }
 
-    public function subtask_count() {
-        return $this->subtasks()->where('task_id', '=', $this->attributes['id'])->count();
+//    public function get_subtask_count() {
+//        return $this->subtasks()->where('task_id', '=', $this->attributes['id'])->count();
+//    }
+//
+//    public function get_subtask_count_completed() {
+//        return $this->subtasks()->where('task_id', '=', $this->attributes['id'])->where('status', '=', 'completed')->count();
+//    }
+
+    public function get_hours_total() {
+        return $this->subtasks()->where('task_id', '=', $this->attributes['id'])->sum('hours_estimate');
     }
 
-    public function subtask_count_completed() {
-        return $this->subtasks()->where('task_id', '=', $this->attributes['id'])->where('status', '=', 'completed')->count();
+    public function get_hours_completed() {
+        return $this->subtasks()->where('task_id', '=', $this->attributes['id'])->where('status', '=', 'completed')->sum('hours_estimate');
     }
 }

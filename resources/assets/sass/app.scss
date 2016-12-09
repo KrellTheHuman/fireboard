@@ -1,11 +1,50 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700');
-// Variables
-@import "variables";
 // Padding and Margins
 @import "pad_vars";
+// Variables
+@import "variables";
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+// Bootstrap Theme
+@import "bootswatch";
+
+// Body
+//$body-bg: #f5f8fa;
+
+// Borders
+//$laravel-border-color: darken($body-bg, 10%);
+//$list-group-border: $laravel-border-color;
+//$navbar-default-border: $laravel-border-color;
+//$panel-default-border: $laravel-border-color;
+//$panel-inner-border: $laravel-border-color;
+
+// Brands
+//$brand-primary: #3097D1;
+//$brand-info: #8eb4cb;
+//$brand-success: #2ab27b;
+//$brand-warning: #cbb956;
+//$brand-danger: #bf5329;
+
+// Typography
+$font-family-sans-serif: "Archivo+Narrow", sans-serif;
+$font-size-base: 12px;
+$line-height-base: 1.4;
+//$text-color: #636b6f;
+
+// Navbar
+//$navbar-default-bg: #fff;
+
+// Buttons
+//$btn-default-color: $text-color;
+
+// Inputs
+//$input-border: lighten($text-color, 40%);
+//$input-border-focus: lighten($brand-primary, 25%);
+//$input-color-placeholder: lighten($text-color, 30%);
+
+// Panels
+//$panel-default-heading-bg: #fff;
 
 /* media query sizes based on bootstrap */
 $mediaXsMin: 480px;
@@ -26,7 +65,37 @@ a:hover {
     text-decoration: underline;
 }
 
+body {
+    font-size: 14px;
+}
+
+#headers-accordion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 4px;
+    #header-due-date {
+        padding-left: 7px;
+        padding-right: 18px;
+    }
+}
+
 .panel {
+    .form-control {
+        padding: 5px;
+        line-height: 1;
+        font-size: 12px;
+        height: inherit;
+    }
+    input[type="checkbox"] {
+        margin: -2px 9px 0 0;
+    }
+    li {
+        line-height: 1.75;
+    }
+    .panel-body {
+        border-top: 1px solid $brand-success !important;
+    }
     .panel-heading {
         display: flex;
         flex-direction: row;
@@ -34,14 +103,33 @@ a:hover {
         cursor: pointer;
 
         .badge {
-            margin: 0 9px 0 -3px;
+            margin: -2px 9px 0 -3px;
         }
     }
     .panel-footer {
-        p.toggle {
-            margin-top: -18px;
+        border-top: 1px solid $brand-success;
+        .toggle {
+            margin-top: -45px;
+            background-color: $gray;
         }
     }
+    .panel-title {
+        font-size: 14px;
+    }
+    .subtask {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .subtask-completed {
+        color: #007379;
+    }
+    .task-date-picker {
+        font-size: 12px;
+    }
+}
+.panel-group .panel {
+    margin-top: 5px;
 }
 
 .text-center-mobile {
@@ -64,12 +152,5 @@ a:hover {
 }
 
 @media (max-width: $mediaMdMax) {
-    #add-task-date-picker {
-        font-size: 12px;
-    }
-    .form-control {
-        padding: 5px;
-        line-height: 1;
-        height: inherit;
-    }
+
 }
