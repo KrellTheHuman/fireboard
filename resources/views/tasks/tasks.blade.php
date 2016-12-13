@@ -34,4 +34,5 @@
             </ul>
         </div>
     </div>
+    @include('tasks._subtask_edit')
 @stop

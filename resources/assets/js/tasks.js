@@ -10,7 +10,7 @@ var addDatePickerToNewTask = () => {
 
 var toggleMoreLess = () => {
     $('.toggle-more-less').on('click', function () {
-        $(this).text($(this).text() === 'more' ? 'less' : 'more');
+        $(this).text($(this).text() === 'MORE' ? 'LESS' : 'MORE');
     });
 };
 

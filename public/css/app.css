@@ -8245,6 +8245,21 @@ body {
   padding-right: 18px;
 }
 
+.modal-content .form-control {
+  padding: 5px;
+  line-height: 1;
+  font-size: 12px;
+  height: inherit;
+}
+
+.modal-content input[type="checkbox"] {
+  margin: -2px 9px 0 0;
+}
+
+.modal-content .task-date-picker {
+  font-size: 12px;
+}
+
 .panel .form-control {
   padding: 5px;
   line-height: 1;
@@ -8281,11 +8296,17 @@ body {
 
 .panel .panel-footer {
   border-top: 1px solid #00bc8c;
+  padding: 0 15px;
 }
 
 .panel .panel-footer .toggle {
-  margin-top: -45px;
+  margin-top: -25px;
   background-color: #464545;
+  padding: 0 5px;
+}
+
+.panel .panel-footer .toggle-more-less {
+  font-size: 10px;
 }
 
 .panel .panel-title {
@@ -8312,6 +8333,10 @@ body {
 
 .panel-group .panel {
   margin-top: 5px;
+}
+
+.pickmeup-twitter-bootstrap {
+  z-index: 10000;
 }
 
 .text-center-mobile {

@@ -18,23 +18,12 @@
                         <span>{{$subtask->hours_estimate}}</span>
                     </li>
                 @endforeach
-                <li>+ Add New Subtask (put this in modal)
-                    <form action="#">
-                        <div class="form-group row">
-                            <div class="col-md-10">
-                                <input name="add-subtask-name" type="text" class="form-control" placeholder="subtask heading">
-                            </div>
-                            <div class="col-md-2">
-                                <input name="add-subtask-due_date" type="text" class="form-control text-center task-date-picker" title="Subtask Due Date">
-                            </div>
-                        </div>
-                    </form>
-                </li>
+                <li><button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#subtask-edit-modal">add new subtask</button></li>
             </ul>
         </div>
         <div class="panel-footer">
             <button class="text-center toggle btn btn-xs">
-                <a href="#collapse-info-{{$task->id}}" class="toggle-more-less" data-toggle="collapse">more</a>
+                <a href="#collapse-info-{{$task->id}}" class="toggle-more-less" data-toggle="collapse">MORE</a>
             </button>
             <div class="collapse" id="collapse-info-{{$task->id}}">
                 @if($task->description !== "")

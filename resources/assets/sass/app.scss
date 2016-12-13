@@ -80,6 +80,21 @@ body {
     }
 }
 
+.modal-content {
+    .form-control {
+        padding: 5px;
+        line-height: 1;
+        font-size: 12px;
+        height: inherit;
+    }
+    input[type="checkbox"] {
+        margin: -2px 9px 0 0;
+    }
+    .task-date-picker {
+        font-size: 12px;
+    }
+}
+
 .panel {
     .form-control {
         padding: 5px;
@@ -108,9 +123,17 @@ body {
     }
     .panel-footer {
         border-top: 1px solid $brand-success;
+        padding: 0 15px;
+        .collapse {
+
+        }
         .toggle {
-            margin-top: -45px;
+            margin-top: -25px;
             background-color: $gray;
+            padding: 0 5px;
+        }
+        .toggle-more-less {
+            font-size: 10px;
         }
     }
     .panel-title {
@@ -130,6 +153,10 @@ body {
 }
 .panel-group .panel {
     margin-top: 5px;
+}
+
+.pickmeup-twitter-bootstrap {
+    z-index: 10000;
 }
 
 .text-center-mobile {
