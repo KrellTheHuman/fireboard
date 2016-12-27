@@ -90,6 +90,9 @@ body {
     input[type="checkbox"] {
         margin: -2px 9px 0 0;
     }
+    select.form-control {
+        height: 25px;
+    }
     .task-date-picker {
         font-size: 12px;
     }

@@ -34,24 +34,17 @@ $factory->define(App\Task::class, function (Faker\Generator $faker) {
         'contact_phone' => $faker->phoneNumber,
         'dev_url' => $faker->url,
         'live_url' => $faker->url,
+        'is_archived' => $faker->boolean(10),
 //        'priority' => $faker->numberBetween(1, 99),
     ];
 });
 
 $factory->define(App\Subtask::class, function (Faker\Generator $faker) {
-    $status_enum = array(
-        'Created',
-        'Work in Progress',
-        'Waiting on Client',
-        'On Hold',
-        'Completed',
-    );
-
     return [
         'task_id' => $faker->numberBetween(1, 12),
         'name' => $faker->sentence(8, true),
         'description' => $faker->sentences(3, true),
-        'status' => $status_enum[random_int(0,4)],
+        'is_complete' => $faker->boolean(20),
         'hours_estimate' => $faker->randomFloat(2,.25,8),
         'user_id' => $faker->numberBetween(1, 4),
     ];

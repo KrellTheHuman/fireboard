@@ -18,8 +18,8 @@ class CreateSubtasksTable extends Migration
             $table->unsignedInteger('task_id')->index();
             $table->string('name');
             $table->string('description');
-            $table->enum('status', ['Created', 'Work in Progress','Waiting on Client', 'On Hold', 'Completed']);
-            $table->unsignedSmallInteger('hours_estimate');
+            $table->boolean('is_complete');
+            $table->float('hours_estimate');
             $table->string('user_id')->index();
             $table->timestamps();
         });

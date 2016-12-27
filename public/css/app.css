@@ -8256,6 +8256,10 @@ body {
   margin: -2px 9px 0 0;
 }
 
+.modal-content select.form-control {
+  height: 25px;
+}
+
 .modal-content .task-date-picker {
   font-size: 12px;
 }

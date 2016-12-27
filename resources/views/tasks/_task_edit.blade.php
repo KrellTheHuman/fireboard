@@ -10,10 +10,10 @@
             <form action="#">
                 <div class="form-group row">
                     <div class="col-md-2">
-                        <input name="add-task-due_date" type="text" class="form-control text-center task-date-picker" title="Task Due Date">
+                        <input name="add_task_due_date" type="text" class="form-control text-center task-date-picker" title="Task Due Date">
                     </div>
                     <div class="col-md-10">
-                        <input name="add-task-name" type="text" class="form-control" placeholder="task heading">
+                        <input name="add_task_name" type="text" class="form-control" placeholder="task heading">
                     </div>
                 </div>
             </form>

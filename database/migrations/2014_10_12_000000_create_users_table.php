@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->string('image_url');
-            $table->unsignedTinyInteger('hours_capacity');
+            $table->float('hours_capacity');
             $table->rememberToken();
             $table->timestamps();
         });

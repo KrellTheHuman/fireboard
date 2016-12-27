@@ -7,20 +7,21 @@
             </div>
 
             <div class="modal-body">
-                <form action="#">
+                <form action="/subtasks" method="POST" id="edit-subtask">
+                    <input type="hidden" name="_token" value="{{csrf_token()}}">
+                    <input type="hidden" name="task_id" value="{{$task->id}}">
                     <div class="form-group row">
-                        <div class="col-md-2">
-                            <input name="subtask-due_date" type="text" class="form-control m-b-3 text-center task-date-picker" title="Subtask Due Date">
-                        </div>
-                        <div class="col-md-10">
-                            <input name="subtask-name" type="text" class="form-control m-b-3" placeholder="subtask heading">
+                        <div class="col-xs-12">
+                            <h5>Name</h5>
+                            <input name="subtask_name" type="text" class="form-control m-b-3">
                         </div>
                         <div class="col-xs-12">
-                            <textarea name="subtask-description" class="form-control m-b-3" placeholder="description" rows="4"></textarea>
+                            <h5>Description</h5>
+                            <textarea name="subtask_description" class="form-control m-b-3" rows="4"></textarea>
                         </div>
                         <div class="col-md-10">
                             <h5>Assigned To</h5>
-                            <select name="subtask-user_id" class="form-control m-b-3">
+                            <select name="subtask_user_id" class="form-control m-b-3">
                                 @foreach($users as $user)
                                     <option value="{{$user->id}}">{{$user->name}}</option>
                                 @endforeach
@@ -28,13 +29,14 @@
                         </div>
                         <div class="col-md-2">
                             <h5>Estimated Hours</h5>
-                            <input name="subtask-house_estimate" type="number" class="form-control m-b-3 text-right" placeholder="0" step="0.25" min="0" max="8">
+                            <input name="subtask_hours_estimate" type="number" class="form-control m-b-3 text-right" placeholder="0" step="0.25" min="0" max="8">
                         </div>
                     </div>
                 </form>
             </div>
 
             <div class="modal-footer">
+                <button type="submit" class="btn btn-xs btn-info" form="edit-subtask">submit</button>
                 <button type="button" class="btn btn-xs" data-dismiss="modal">close</button>
             </div>
 

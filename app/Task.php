@@ -38,6 +38,6 @@ class Task extends Model
     }
 
     public function get_hours_completed() {
-        return $this->subtasks()->where('task_id', '=', $this->attributes['id'])->where('status', '=', 'completed')->sum('hours_estimate');
+        return $this->subtasks()->where('task_id', '=', $this->attributes['id'])->where('is_complete', '=', true)->sum('hours_estimate');
     }
 }

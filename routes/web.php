@@ -11,5 +11,10 @@
 |
 */
 
-Route::resource('/', 'TasksController');
+Route::get('/', function () {
+    return view('welcome');
+});
+
 Route::resource('users', 'UsersController');
+Route::resource('tasks', 'TasksController');
+Route::resource('subtasks', 'SubtasksController');
